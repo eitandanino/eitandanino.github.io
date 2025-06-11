@@ -180,7 +180,7 @@
   <body>
     <div class="container">
       <img src="images/image.jpeg" alt="לוגו השופיניסטים" class="logo" />
-      <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+      <h1>קונים חכם – <br />וחוסכים מאות שקלים כל חודש!</h1>
       <div class="subtitle">
         אלפי ישראלים כבר בפנים – מקבלים דילים אמיתיים, קופונים שווים והמלצות
         למוצרים שאשכרה עובדים.
@@ -206,7 +206,7 @@
             alt="כללי"
             class="group-icon"
           />
-          הקבוצה הכללית
+          הקבוצה הכללית 🛍️ - הכול מהכול במקום אחד
         </a>
         <a
           id="group3"
@@ -220,7 +220,7 @@
             alt="נשים"
             class="group-icon"
           />
-          קבוצת נשים
+          קבוצת נשים 💄 - אליאקספרס לנשים שמבינות
         </a>
         <a
           id="group4"
@@ -234,7 +234,7 @@
             alt="תינוקות"
             class="group-icon"
           />
-          קבוצת תינוקות
+          קבוצת תינוקות 🍼 - דילים לתינוקות בלי לבכות
         </a>
         <a
           id="group2"
@@ -248,9 +248,25 @@
             alt="גברים"
             class="group-icon"
           />
-          קבוצת גברים
+          קבוצת גברים 🧔 - גאדג’טים, רכב וכושר
         </a>
       </div>
+      <div
+        id="testimonialBox"
+        style="
+          font-size: 0.95em;
+          background: #f0f4ff;
+          padding: 16px;
+          border-radius: 12px;
+          margin-bottom: 24px;
+          min-height: 70px;
+        "
+      >
+        💬 "מצאתי שואב אבק שהיה בארץ ב-1,000 ש"ח – ובקבוצה ראיתי אותו ב-320 ש"ח.
+        הצטרפתי – ונשארתי."
+        <br />– מיכל מ.
+      </div>
+
       <hr class="divider" />
       <div class="features">
         ✅ קופונים והנחות שלא תמצאו לבד <br />
@@ -314,6 +330,23 @@
       };
       // ברירת מחדל: ווצאפ
       switchLinks("whatsapp");
+    </script>
+    <script>
+      const testimonials = [
+        '💬 "מצאתי שואב אבק שהיה בארץ ב-1,000 ש"ח – ובקבוצה ראיתי אותו ב-320 ש"ח. הצטרפתי – ונשארתי."<br />– מיכל מ.',
+        '💬 "קניתי בוסטר לתינוק ב-70 ש"ח במקום 250 – וזה הגיע תוך שבועיים!"<br />– דנה ל.',
+        '💬 "מצאתי דיל על נעלי ספורט ב-50 ש"ח – חברים לא האמינו לי"<br />– איתי ש.',
+        '💬 "פעם ראשונה שאני נהנית מקניות אונליין – בזכות הקבוצה"<br />– רעות ג.',
+        '💬 "גאדג׳טים, פטנטים לבית ומוצרים שלא ראיתי בארץ – הכל שם"<br />– יואב ק.',
+      ];
+
+      let currentIndex = 0;
+      const box = document.getElementById("testimonialBox");
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        box.innerHTML = testimonials[currentIndex];
+      }, 5000); // כל 5 שניות
     </script>
   </body>
 </html>
