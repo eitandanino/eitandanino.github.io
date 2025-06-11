@@ -1,352 +1,47 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>השופיניסטים - קהילת השופינג המובילה בישראל</title>
-    <link rel="icon" type="image/jpeg" href="images/favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;400&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>מכניסים אותך לקבוצה...</title>
     <style>
       body {
-        direction: rtl;
-        font-family: "Heebo", Arial, sans-serif;
-        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
-        margin: 0;
-        padding: 0;
-        color: #222;
-      }
-      .container {
-        max-width: 480px;
-        margin: 40px auto;
-        background: #fff;
-        border-radius: 24px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-        padding: 32px 24px 24px 24px;
-        text-align: center;
-      }
-      .logo {
-        width: 120px;
-        margin-bottom: 16px;
-        border-radius: 16px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      }
-      h1 {
-        font-size: 2.2em;
-        margin-bottom: 8px;
-        color: #0a2540;
-        letter-spacing: 1px;
-      }
-      .subtitle {
-        font-size: 1.1em;
-        color: #4f5d75;
-        margin-bottom: 24px;
-      }
-      .switch-buttons {
+        background-color: #f4f4f4;
         display: flex;
-        gap: 12px;
         justify-content: center;
-        margin-bottom: 18px;
-      }
-      .switch-btn {
-        background: #e0e7ef;
-        color: #0a2540;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 22px;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: 1em;
-        transition: background 0.2s, color 0.2s;
-        outline: none;
-      }
-      .switch-btn.active,
-      .switch-btn:focus {
-        background: #3a86ff;
-        color: #fff;
-      }
-      .groups {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin-bottom: 32px;
-      }
-      .group-btn {
-        display: flex;
         align-items: center;
-        justify-content: right;
-        gap: 12px;
-        background: linear-gradient(90deg, #0a2540 0%, #3a86ff 100%);
-        color: #fff;
-        font-size: 1.1em;
-        font-weight: 700;
-        border: none;
-        border-radius: 12px;
-        padding: 12px 20px;
-        cursor: pointer;
-        transition: background 0.2s, transform 0.1s;
-        text-decoration: none;
-        box-shadow: 0 2px 8px rgba(58, 134, 255, 0.08);
-        text-align: right;
-      }
-      .group-btn:hover {
-        background: linear-gradient(90deg, #3a86ff 0%, #0a2540 100%);
-        transform: translateY(-2px) scale(1.03);
-      }
-      .group-icon {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-        border: 2px solid #e0e7ef;
-        background: #fff;
-        flex-shrink: 0;
-      }
-      .divider {
-        margin: 32px 0 16px 0;
-        border: none;
-        border-top: 1.5px solid #e0e7ef;
-      }
-      .features {
-        display: flex;
+        height: 100vh;
+        font-family: Arial, sans-serif;
         flex-direction: column;
-        gap: 12px;
-        margin-bottom: 24px;
-        color: #3a86ff;
-        font-weight: 500;
+        color: #333;
       }
-      .footer {
-        font-size: 0.95em;
-        color: #7b8794;
-        margin-top: 24px;
+      .spinner {
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #4caf50;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin-top: 20px;
       }
-      @media (max-width: 600px) {
-        .container {
-          padding: 18px 4vw 18px 4vw;
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
         }
-        h1 {
-          font-size: 1.5em;
-        }
-        .group-btn {
-          font-size: 1em;
-          padding: 10px 12px;
-        }
-        .group-icon {
-          width: 30px;
-          height: 30px;
+        100% {
+          transform: rotate(360deg);
         }
       }
     </style>
-    <!-- Meta Pixel Code -->
     <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "693497996768012");
-      fbq("track", "PageView");
+      setTimeout(function () {
+        window.location.href =
+          "https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf";
+      }, 1500); // 1.5 seconds delay
     </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=693497996768012&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
   </head>
   <body>
-    <div class="container">
-      <img src="images/image.jpeg" alt="לוגו השופיניסטים" class="logo" />
-      <h1>קונים חכם – <br />וחוסכים מאות שקלים כל חודש!</h1>
-      <div class="subtitle">
-        אלפי ישראלים כבר בפנים – מקבלים דילים אמיתיים, קופונים שווים והמלצות
-        למוצרים שאשכרה עובדים.
-        <br />
-        רוצים לחסוך בלי להתאמץ? הצטרפו עכשיו לקבוצת הוואטסאפ שמתאימה לכם 👇
-      </div>
-
-      <!-- כפתורי החלפה -->
-      <div class="switch-buttons">
-        <button id="whatsappBtn" class="switch-btn active">ווצאפ</button>
-        <button id="telegramBtn" class="switch-btn">טלגרם</button>
-      </div>
-      <div class="groups">
-        <a
-          id="group1"
-          href="https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf"
-          class="group-btn"
-          target="_blank"
-        >
-          <img
-            id="icon1"
-            src="images/WhatsApp Image 2025-05-11 at 14.00.27.jpeg"
-            alt="כללי"
-            class="group-icon"
-          />
-          הקבוצה הכללית 🛍️ - הכול מהכול במקום אחד
-        </a>
-        <a
-          id="group3"
-          href="https://chat.whatsapp.com/HYboLCLGBka14ndRazDaQF"
-          class="group-btn"
-          target="_blank"
-        >
-          <img
-            id="icon3"
-            src="images/בנות.jpeg"
-            alt="נשים"
-            class="group-icon"
-          />
-          קבוצת נשים 💄 - אליאקספרס לנשים שמבינות
-        </a>
-        <a
-          id="group4"
-          href="https://chat.whatsapp.com/LcerXy979qh8MAZPAgryb9"
-          class="group-btn"
-          target="_blank"
-        >
-          <img
-            id="icon4"
-            src="images/WhatsApp Image 2025-05-11 at 14.03.58.jpeg"
-            alt="תינוקות"
-            class="group-icon"
-          />
-          קבוצת תינוקות 🍼 - דילים לתינוקות בלי לבכות
-        </a>
-        <a
-          id="group2"
-          href="https://chat.whatsapp.com/EpuJPvz15Mp6fE163U3XHr"
-          class="group-btn"
-          target="_blank"
-        >
-          <img
-            id="icon2"
-            src="images/WhatsApp Image 2025-05-11 at 13.53.36.jpeg"
-            alt="גברים"
-            class="group-icon"
-          />
-          קבוצת גברים 🧔 - גאדג’טים, רכב וכושר
-        </a>
-      </div>
-      <div
-        id="testimonialBox"
-        style="
-          font-size: 0.95em;
-          background: #f0f4ff;
-          padding: 16px;
-          border-radius: 12px;
-          margin-bottom: 24px;
-          min-height: 70px;
-        "
-      >
-        💬 "מצאתי שואב אבק שהיה בארץ ב-1,000 ש"ח – ובקבוצה ראיתי אותו ב-320 ש"ח.
-        הצטרפתי – ונשארתי."
-        <br />– מיכל מ.
-      </div>
-
-      <hr class="divider" />
-      <div class="features">
-        ✅ קופונים והנחות שלא תמצאו לבד <br />
-        ✅ מוצרים מנצחים מכל התחומים – שנבדקו ונקנו <br />
-        ✅ עדכונים יומיים בקבוצות לפי תחומי עניין <br />
-        ✅ עזרה, תמיכה וטיפים לקנייה חכמה
-      </div>
-
-      <div class="footer">כל הזכויות שמורות &copy; השופיניסטים 2025</div>
-    </div>
-    <script>
-      // קישורים לווצאפ ולטלגרם (החלף את קישורי טלגרם לקישורים האמיתיים שלך)
-      const whatsappLinks = [
-        "https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf",
-        "https://chat.whatsapp.com/EpuJPvz15Mp6fE163U3XHr",
-        "https://chat.whatsapp.com/HYboLCLGBka14ndRazDaQF",
-        "https://chat.whatsapp.com/LcerXy979qh8MAZPAgryb9",
-      ];
-      const telegramLinks = [
-        "https://t.me/+XaRz8NUfuSVhYWU0",
-        "https://t.me/+Y4HDHDvZd-kzM2Jk",
-        "https://t.me/+7WZW4ANiwZ5iN2Zk",
-        "https://t.me/+LdGHcCPGF201YWNk",
-      ];
-      // אייקונים (החלף לאייקונים של טלגרם אם תרצה)
-      const whatsappIcons = [
-        "images/WhatsApp Image 2025-05-11 at 14.00.27.jpeg",
-        "images/WhatsApp Image 2025-05-11 at 13.53.36.jpeg",
-        "images/בנות.jpeg",
-        "images/WhatsApp Image 2025-05-11 at 14.03.58.jpeg",
-      ];
-      const telegramIcons = [
-        "images/WhatsApp Image 2025-05-11 at 14.00.27.jpeg",
-        "images/WhatsApp Image 2025-05-11 at 13.53.36.jpeg",
-        "images/בנות.jpeg",
-        "images/WhatsApp Image 2025-05-11 at 14.03.58.jpeg",
-      ];
-
-      // פונקציה להחלפת קישורים ואייקונים
-      function switchLinks(type) {
-        const links = type === "whatsapp" ? whatsappLinks : telegramLinks;
-        const icons = type === "whatsapp" ? whatsappIcons : telegramIcons;
-        for (let i = 1; i <= 4; i++) {
-          document.getElementById("group" + i).href = links[i - 1];
-          document.getElementById("icon" + i).src = icons[i - 1];
-        }
-        // הדגשת כפתור נבחר
-        document
-          .getElementById("whatsappBtn")
-          .classList.toggle("active", type === "whatsapp");
-        document
-          .getElementById("telegramBtn")
-          .classList.toggle("active", type === "telegram");
-      }
-
-      document.getElementById("whatsappBtn").onclick = function () {
-        switchLinks("whatsapp");
-      };
-      document.getElementById("telegramBtn").onclick = function () {
-        switchLinks("telegram");
-      };
-      // ברירת מחדל: ווצאפ
-      switchLinks("whatsapp");
-    </script>
-    <script>
-      const testimonials = [
-        '💬 "מצאתי שואב אבק שהיה בארץ ב-1,000 ש"ח – ובקבוצה ראיתי אותו ב-320 ש"ח. הצטרפתי – ונשארתי."<br />– מיכל מ.',
-        '💬 "קניתי בוסטר לתינוק ב-70 ש"ח במקום 250 – וזה הגיע תוך שבועיים!"<br />– דנה ל.',
-        '💬 "מצאתי דיל על נעלי ספורט ב-50 ש"ח – חברים לא האמינו לי"<br />– איתי ש.',
-        '💬 "פעם ראשונה שאני נהנית מקניות אונליין – בזכות הקבוצה"<br />– רעות ג.',
-        '💬 "גאדג׳טים, פטנטים לבית ומוצרים שלא ראיתי בארץ – הכל שם"<br />– יואב ק.',
-      ];
-
-      let currentIndex = 0;
-      const box = document.getElementById("testimonialBox");
-
-      setInterval(() => {
-        currentIndex = (currentIndex + 1) % testimonials.length;
-        box.innerHTML = testimonials[currentIndex];
-      }, 5000); // כל 5 שניות
-    </script>
+    <h2>מכניסים אותך לקבוצה...</h2>
+    <div class="spinner"></div>
   </body>
 </html>
