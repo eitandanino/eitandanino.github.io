@@ -22,26 +22,55 @@
         width: 50px;
         height: 50px;
         animation: spin 1s linear infinite;
-        margin-top: 20px;
+        margin: 20px 0;
       }
       @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
+        0% { transform: rotate(0deg);}
+        100% { transform: rotate(360deg);}
+      }
+      .whatsapp-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+      .backup-link {
+        margin-top: 25px;
+        color: #fff;
+        background: #25d366;
+        padding: 10px 22px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: background 0.2s;
+        display: inline-block;
+      }
+      .backup-link:hover {
+        background: #128c7e;
+      }
+      .info {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #666;
       }
     </style>
     <script>
       setTimeout(function () {
         window.location.href =
           "https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf";
-      }, 1500); // 1.5 seconds delay
+      }, 1500);
     </script>
   </head>
   <body>
-    <h2>מכניסים אותך לקבוצה...</h2>
+    <img class="whatsapp-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="וואטסאפ" />
+    <h2>מכניסים אותך לקבוצת הווצאפ...</h2>
     <div class="spinner"></div>
+    <div class="info">
+      עוד רגע תועבר אוטומטית לקבוצה.<br>
+      <b>ההצטרפות חינם וללא התחייבות.</b>
+    </div>
+    <a class="backup-link" href="https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf" target="_blank">
+      לא עברתם אוטומטית? לחצו כאן
+    </a>
   </body>
 </html>
