@@ -1,76 +1,85 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>מכניסים אותך לקבוצה...</title>
-    <style>
-      body {
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: Arial, sans-serif;
-        flex-direction: column;
-        color: #333;
-      }
-      .spinner {
-        border: 6px solid #f3f3f3;
-        border-top: 6px solid #4caf50;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite;
-        margin: 20px 0;
-      }
-      @keyframes spin {
-        0% { transform: rotate(0deg);}
-        100% { transform: rotate(360deg);}
-      }
-      .whatsapp-icon {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
-      }
-      .backup-link {
-        margin-top: 25px;
-        color: #fff;
-        background: #25d366;
-        padding: 10px 22px;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1em;
-        transition: background 0.2s;
-        display: inline-block;
-      }
-      .backup-link:hover {
-        background: #128c7e;
-      }
-      .info {
-        margin-top: 10px;
-        font-size: 1em;
-        color: #666;
-      }
-    </style>
-    <script>
-      setTimeout(function () {
-        window.location.href =
-          "https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf";
-      }, 500);
+<body>
+    <div class="container">
+      <img src="images/image.jpeg" alt="לוגו השופיניסטים" class="logo" />
+      <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+      <h1>קונים חכם – <br />וחוסכים מאות שקלים כל חודש!</h1>
+      <div class="subtitle">
+        אלפי ישראלים כבר בפנים – מקבלים דילים אמיתיים, קופונים שווים והמלצות
+        למוצרים שאשכרה עובדים.
+@@ -206,7 +206,7 @@ <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+            alt="כללי"
+            class="group-icon"
+          />
+          הקבוצה הכללית
+          הקבוצה הכללית 🛍️ - הכול מהכול במקום אחד
+        </a>
+        <a
+          id="group3"
+@@ -220,7 +220,7 @@ <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+            alt="נשים"
+            class="group-icon"
+          />
+          קבוצת נשים
+          קבוצת נשים 💄 - אליאקספרס לנשים שמבינות
+        </a>
+        <a
+          id="group4"
+@@ -234,7 +234,7 @@ <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+            alt="תינוקות"
+            class="group-icon"
+          />
+          קבוצת תינוקות
+          קבוצת תינוקות 🍼 - דילים לתינוקות בלי לבכות
+        </a>
+        <a
+          id="group2"
+@@ -248,9 +248,25 @@ <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+            alt="גברים"
+            class="group-icon"
+          />
+          קבוצת גברים
+          קבוצת גברים 🧔 - גאדג’טים, רכב וכושר
+        </a>
+      </div>
+      <div
+        id="testimonialBox"
+        style="
+          font-size: 0.95em;
+          background: #f0f4ff;
+          padding: 16px;
+          border-radius: 12px;
+          margin-bottom: 24px;
+          min-height: 70px;
+        "
+      >
+        💬 "מצאתי שואב אבק שהיה בארץ ב-1,000 ש"ח – ובקבוצה ראיתי אותו ב-320 ש"ח.
+        הצטרפתי – ונשארתי."
+        <br />– מיכל מ.
+      </div>
+
+      <hr class="divider" />
+      <div class="features">
+        ✅ קופונים והנחות שלא תמצאו לבד <br />
+@@ -315,5 +331,22 @@ <h1>קונים חכם – וחוסכים מאות שקלים כל חודש!</h1>
+      // ברירת מחדל: ווצאפ
+      switchLinks("whatsapp");
     </script>
-  </head>
-  <body>
-    <img class="whatsapp-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="וואטסאפ" />
-    <h2>מכניסים אותך לקבוצת הווצאפ...</h2>
-    <div class="spinner"></div>
-    <div class="info">
-      עוד רגע תועבר אוטומטית לקבוצה.<br>
-      <b>ההצטרפות חינם וללא התחייבות.</b>
-    </div>
-    <a class="backup-link" href="https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf" target="_blank">
-      לא עברתם אוטומטית? לחצו כאן
-    </a>
+    <script>
+      const testimonials = [
+        '💬 "מצאתי שואב אבק שהיה בארץ ב-1,000 ש"ח – ובקבוצה ראיתי אותו ב-320 ש"ח. הצטרפתי – ונשארתי."<br />– מיכל מ.',
+        '💬 "קניתי בוסטר לתינוק ב-70 ש"ח במקום 250 – וזה הגיע תוך שבועיים!"<br />– דנה ל.',
+        '💬 "מצאתי דיל על נעלי ספורט ב-50 ש"ח – חברים לא האמינו לי"<br />– איתי ש.',
+        '💬 "פעם ראשונה שאני נהנית מקניות אונליין – בזכות הקבוצה"<br />– רעות ג.',
+        '💬 "גאדג׳טים, פטנטים לבית ומוצרים שלא ראיתי בארץ – הכל שם"<br />– יואב ק.',
+      ];
+
+      let currentIndex = 0;
+      const box = document.getElementById("testimonialBox");
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        box.innerHTML = testimonials[currentIndex];
+      }, 5000); // כל 5 שניות
+    </script>
   </body>
 </html>
